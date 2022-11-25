@@ -1,2 +1,8 @@
 server:
   port: 8081
+spring:
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/taller_sistemas
+    password: Jf1007179230
+    ddl: update
