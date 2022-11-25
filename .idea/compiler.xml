@@ -8,12 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Prueba_Java" />
-        <module name="seguridad" />
+        <module name="eureka-service" />
         <module name="config-server" />
+        <module name="seguridad" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-server" target="11" />
+      <module name="eureka-service" target="11" />
       <module name="Prueba_Java" target="11" />
       <module name="seguridad" target="11" />
     </bytecodeTargetLevel>
@@ -22,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Prueba_Java" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="eureka-service" options="-parameters" />
       <module name="seguridad" options="-parameters" />
     </option>
   </component>

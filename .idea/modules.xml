@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Estudio.iml" filepath="$PROJECT_DIR$/.idea/Estudio.iml" />
       <module fileurl="file://$PROJECT_DIR$/Back-San-Cayetano/Prueba_Java.iml" filepath="$PROJECT_DIR$/Back-San-Cayetano/Prueba_Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sistemas_Entidades/seguridad.iml" filepath="$PROJECT_DIR$/Sistemas_Entidades/seguridad.iml" />
     </modules>
   </component>
