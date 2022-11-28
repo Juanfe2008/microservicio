@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(name = "productos", url = "http://localhost:8080")
+@FeignClient(name = "prueba-service")
 @RequestMapping("/api/products")
 public interface ProductoFeingClient {
 
