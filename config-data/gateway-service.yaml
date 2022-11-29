@@ -18,7 +18,10 @@ spring:
         - id: prueba-service
           uri: lb://prueba-service
           predicates:
-            - Path=/api/**
+            - Path=/api/car/**
+            - Path=/api/users/**
+            - Path=/api/products/**
+            - Path=/api/factura/**
         - id: entidades-service
           uri: lb://entidades-service
           predicates:
