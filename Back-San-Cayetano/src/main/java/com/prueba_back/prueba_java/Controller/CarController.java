@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
-@RequestMapping("car")
+@RequestMapping("/api/car")
 @CrossOrigin(origins = "*")
 public class CarController {
 

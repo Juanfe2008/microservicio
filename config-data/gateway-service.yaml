@@ -1,0 +1,25 @@
+server:
+  port: 8081
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: prueba-service
+          uri: lb://prueba-service
+          predicates:
+            - Path=/api/**
+        - id: entidades-service
+          uri: lb://entidades-service
+          predicates:
+            - Path=/api/**
