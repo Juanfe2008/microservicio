@@ -4,6 +4,7 @@ import com.corhuila.sistemas.entity.Usuarios;
 import com.corhuila.sistemas.iservice.IUsuariosService;
 import com.corhuila.sistemas.model.Producto;
 import com.corhuila.sistemas.model.ResponseProducto;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -58,8 +59,13 @@ public class UsuariosController {
 		service.delete(id);
 	}
 
+	@CircuitBreaker(name = "pruebaCB", fallbackMethod = "fallBackGetProduct")
 	@PostMapping("save/producto")
 	public ResponseEntity<ResponseProducto> saveProducto(@RequestBody Producto producto){
 		return new ResponseEntity<>(service.saveProducto(producto),HttpStatus.OK);
+	}
+
+	private ResponseEntity<ResponseProducto> fallBackGetProduct(@RequestBody Producto producto, RuntimeException e) {
+		return new ResponseEntity("No se pudo comunicar con el microservicio y el producto no pudo ser creado", HttpStatus.OK);
 	}
 }

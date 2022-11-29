@@ -14,3 +14,14 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     password: Jf1007179230
     ddl: update
+resilience4j.circuitbreaker:
+  instances:
+    entidadesCB:
+      registerHealthIndicator: true
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 3
+      slidingWindowType: TIME_BASED
+      minimumNumberOfCalls: 4
+      waitDurationInOpenState: 5s
+      failureRateThreshold: 50
+      eventConsumerBufferSize: 10
