@@ -25,4 +25,16 @@ spring:
         - id: entidades-service
           uri: lb://entidades-service
           predicates:
-            - Path=/api/**
+            - Path=/api/vehiculos/**
+            - Path=/api/usuarios/**
+            - Path=/api/tipo_vehiculo/**
+            - Path=/api/roles/**
+            - Path=/api/personas/**
+            - Path=/api/paises/**
+            - Path=/api/marca/**
+            - Path=/api/inventario/**
+            - Path=/api/factura/**
+            - Path=/api/detalle_factura/**
+            - Path=/api/departamento/**
+            - Path=/api/continente/**
+            - Path=/api/ciudad/**
