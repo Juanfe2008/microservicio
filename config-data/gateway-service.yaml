@@ -22,4 +22,4 @@ spring:
         - id: entidades-service
           uri: lb://entidades-service
           predicates:
-            - Path=/api/**
+            - Path=/api1.0/**
