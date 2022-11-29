@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/products")
 @CrossOrigin(origins = "*")
 public class ProductController {
     public ProductController(ServiceProduct productService) {

@@ -18,23 +18,23 @@ spring:
         - id: prueba-service
           uri: lb://prueba-service
           predicates:
-            - Path=/api/car/**
-            - Path=/api/users/**
-            - Path=/api/products/**
-            - Path=/api/factura/**
+            - Path=/car/**
+            - Path=/users/**
+            - Path=/products/**
+            - Path=/factura/**
         - id: entidades-service
           uri: lb://entidades-service
           predicates:
-            - Path=/api/vehiculos/**
-            - Path=/api/usuarios/**
-            - Path=/api/tipo_vehiculo/**
-            - Path=/api/roles/**
-            - Path=/api/personas/**
-            - Path=/api/paises/**
-            - Path=/api/marca/**
-            - Path=/api/inventario/**
-            - Path=/api/factura/**
-            - Path=/api/detalle_factura/**
-            - Path=/api/departamento/**
-            - Path=/api/continente/**
-            - Path=/api/ciudad/**
+            - Path=/vehiculos/**
+            - Path=/usuarios/**
+            - Path=/tipo_vehiculo/**
+            - Path=/roles/**
+            - Path=/personas/**
+            - Path=/paises/**
+            - Path=/marca/**
+            - Path=/inventario/**
+            - Path=/factura/**
+            - Path=/detalle_factura/**
+            - Path=/departamento/**
+            - Path=/continente/**
+            - Path=/ciudad/**

@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/factura")
+@RequestMapping("/factura")
 @CrossOrigin(origins = "*")
 public class FacturaController {
 
