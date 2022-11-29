@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/factura")
+@RequestMapping("/api1.0/factura")
 public class FacturaController {
 
     @Autowired

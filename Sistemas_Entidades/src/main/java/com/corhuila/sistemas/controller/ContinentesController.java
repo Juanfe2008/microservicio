@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/continente")
+@RequestMapping("/api1.0/continente")
 public class ContinentesController {
 
     @Autowired

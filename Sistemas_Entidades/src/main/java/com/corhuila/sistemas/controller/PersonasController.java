@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/personas")
+@RequestMapping("/api1.0/personas")
 public class PersonasController {
 	@Autowired
 	private IPersonasService service;
